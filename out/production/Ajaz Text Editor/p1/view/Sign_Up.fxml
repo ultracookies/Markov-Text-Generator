@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="289.0" prefWidth="513.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="p1.controller.SignUp">
+   <children>
+      <TextField fx:id="uNameTF" layoutX="191.0" layoutY="55.0" />
+      <Label layoutX="124.0" layoutY="60.0" text="Username:" />
+      <Label layoutX="125.0" layoutY="106.0" text="Password:" />
+      <PasswordField fx:id="pWordTF" layoutX="191.0" layoutY="102.0" />
+      <PasswordField fx:id="cpWordTF" layoutX="191.0" layoutY="149.0" />
+      <Label layoutX="82.0" layoutY="154.0" text="Confirm Password:" />
+      <Text layoutX="29.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Passwords must be at least 6 characters long with at least one upper case letter, one lower case letter, and one digit." wrappingWidth="483.19384765625" />
+      <Button fx:id="signUpBtn" layoutX="195.0" layoutY="234.0" mnemonicParsing="false" onAction="#signUpAction" text="Sign Up" />
+      <Button fx:id="backBtn" layoutX="273.0" layoutY="235.0" mnemonicParsing="false" onAction="#backAction" text="Back" />
+      <Label fx:id="errorMsgLbl" layoutX="29.0" layoutY="240.0" text="Input not valid. Try again." />
+   </children>
+</AnchorPane>
